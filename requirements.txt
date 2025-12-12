@@ -1,0 +1,37 @@
+# Core DL stack (CUDA 12.6 wheels available via PyTorch index)
+torch==2.9.1
+torchvision==0.24.1
+torchaudio==2.9.1
+
+# Computer vision & image utils
+opencv-python==4.12.0.88
+numpy==2.2.6
+Pillow==12.0.0
+scikit-image==0.25.2
+matplotlib==3.10.7
+
+# Diffusion / ControlNet stack (used in 03_xai.py)
+diffusers==0.35.2
+transformers==4.37.2
+accelerate==1.1.0
+controlnet-aux==0.0.10
+
+# Captioning / BLIP-2 (used in 01_captioning.py)
+lavis==1.0.2
+
+# Quality metrics (used in 04_evaluate.py)
+lpips==0.1.4
+piq==0.8.0
+pyiqa==0.1.14.1
+openai-clip==1.0.1
+
+# Progress bars
+textual==0.79.1
+rich==13.9.4
+
+# Misc
+tqdm==4.67.1
+requests==2.32.5
+
+# Note: For CUDA wheels use the PyTorch index:
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
